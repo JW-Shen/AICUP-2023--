@@ -1,0 +1,16 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+hanlp
+opencc
+ipywidgets==8.0.5
+jieba==0.42.1
+numpy==1.22.4
+pandas==1.5.3
+pandarallel==1.6.4
+scikit-learn==1.2.2
+tqdm==4.65.0
+tensorboard==2.11.0
+torch==1.13.1+cu116
+transformers==4.27.1
+wikipedia==1.4.0
+TCSP==0.0.9
