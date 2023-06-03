@@ -55,6 +55,7 @@ The descriptions are as follows:
 ├── stege3_3(hfl_chinese-bert-wwm-ext).ipynb   
 ├── stege3_4(hfl_chinese-macbert-large).ipynb             
 ├── stege3_5(hfl_chinese-lert-large).ipynb
+├── Private.ipynb                   # 處理 private 資料
 ├── Ensemble.ipynb
 ├── checkpoints                     # 存放模型
 │   ├── sent_retrieval
@@ -72,4 +73,5 @@ The descriptions are as follows:
 2. TFIDF_doc5.ipynb & TFIDF_doc1.ipynb
 3. stage1&2.ipynb
 4. 5 個 stege3 .ipynb 檔
-5. Ensemble.ipynb
+5. Private.ipynb
+6. Ensemble.ipynb
