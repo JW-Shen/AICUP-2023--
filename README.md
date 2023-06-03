@@ -4,7 +4,7 @@
 * Private leaderboard：0.680223 / Rank 6
 * Environment: Colab Pro
     * GPU: NVIDIA A100-SXM4-40GB
- * ![Download checkpoints](https://drive.google.com/file/d/12m8aVyHx8xZNr6A6dSZQXQDj_Q8-xVfW/view?usp=sharing)
+ * [Download checkpoints](https://drive.google.com/file/d/12m8aVyHx8xZNr6A6dSZQXQDj_Q8-xVfW/view?usp=sharing)
  
 ## Data format 
 
