@@ -5,7 +5,12 @@
 * Environment: Colab Pro
     * GPU: NVIDIA A100-SXM4-40GB
  * [Download checkpoints](https://drive.google.com/file/d/12m8aVyHx8xZNr6A6dSZQXQDj_Q8-xVfW/view?usp=sharing)
- 
+
+## Install Package
+```bash
+pip install -r requirements.txt
+```
+
 ## Data format 
 
 The files provided for download for participants are divided into three main categories: 
