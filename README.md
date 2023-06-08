@@ -11,35 +11,6 @@
 pip install -r requirements.txt
 ```
 
-## Data format 
-
-The files provided for download for participants are divided into three main categories: 
-* Training datasets, including "Chinese Wikipedia data" and "public training dataset"
-* Public test dataset 
-* Private test dataset
-
-The descriptions are as follows:
-
-1. Chinese Wikipedia data (archived version: Dec 2022 dump):
-
-    * The format is .jsonl and has been split into multiple files, with each file containing 50,000 processed entries.
-    * Each row represents an entry, which corresponds to an article in Wikipedia.
-    * The "id" field represents the article name, the "text" field represents the processed article, and the "lines" field represents the original Wikipedia data.
-2. Public training dataset: The downloaded file is named public_train.jsonl, and the data content includes:
-
-    * Each row represents a claim sentence and its correct answer.
-    * The information in each row includes "id": sample ID, "label": validation category of the claim sentence, "claim": claim sentence text, and "evidence": evidence set.
-    * The format of "evidence" is [<annotation_id>, <evidence_id>, article name, sentence number], which is composed of multiple layers of lists. It represents that a claim sentence may have multiple sets of evidence, and each set of evidence may contain multiple evidence sentences (which can be observed in the innermost list of the dataset). If a set of evidence contains multiple evidence sentences, they will have the same <evidence_id>. Each evidence sentence in a set shares the same <annotation_id>, and if the "label" of a claim sentence is "NOT ENOUGH INFO," the <evidence_id> will be None.
-    ![image](fig/Data_format.png)
-3. Public test dataset and Private test dataset:
-
-    * The format is .jsonl and contains multiple claim sentences.
-    * Each row represents a claim sentence, and each claim sentence has two fields: "id" and "claim." The "id" field represents the ID of the claim sentence, and the "claim" field contains the content of the claim sentence.
-
-## Evaluation
-
-![image](fig/Evaluation.png)
-
 ## Folder Structure
 
 ```
@@ -81,3 +52,32 @@ The descriptions are as follows:
 4. 5 個 stege3 .ipynb 檔
 5. Private.ipynb
 6. Ensemble.ipynb
+
+## Data format 
+
+The files provided for download for participants are divided into three main categories: 
+* Training datasets, including "Chinese Wikipedia data" and "public training dataset"
+* Public test dataset 
+* Private test dataset
+
+The descriptions are as follows:
+
+1. Chinese Wikipedia data (archived version: Dec 2022 dump):
+
+    * The format is .jsonl and has been split into multiple files, with each file containing 50,000 processed entries.
+    * Each row represents an entry, which corresponds to an article in Wikipedia.
+    * The "id" field represents the article name, the "text" field represents the processed article, and the "lines" field represents the original Wikipedia data.
+2. Public training dataset: The downloaded file is named public_train.jsonl, and the data content includes:
+
+    * Each row represents a claim sentence and its correct answer.
+    * The information in each row includes "id": sample ID, "label": validation category of the claim sentence, "claim": claim sentence text, and "evidence": evidence set.
+    * The format of "evidence" is [<annotation_id>, <evidence_id>, article name, sentence number], which is composed of multiple layers of lists. It represents that a claim sentence may have multiple sets of evidence, and each set of evidence may contain multiple evidence sentences (which can be observed in the innermost list of the dataset). If a set of evidence contains multiple evidence sentences, they will have the same <evidence_id>. Each evidence sentence in a set shares the same <annotation_id>, and if the "label" of a claim sentence is "NOT ENOUGH INFO," the <evidence_id> will be None.
+    ![image](fig/Data_format.png)
+3. Public test dataset and Private test dataset:
+
+    * The format is .jsonl and contains multiple claim sentences.
+    * Each row represents a claim sentence, and each claim sentence has two fields: "id" and "claim." The "id" field represents the ID of the claim sentence, and the "claim" field contains the content of the claim sentence.
+
+## Evaluation
+
+![image](fig/Evaluation.png)
