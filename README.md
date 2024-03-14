@@ -1,7 +1,11 @@
 # AICUP-2023-Fact-Extraction-and-Verification-for-Disinformation
 
+<p>本競賽將提供一個事實資料庫以及陳述句 (claim)，參賽者需要建立自動化的事實檢索與查核系統，以驗證陳述句的真偽。<br />
+如果陳述句能夠「支持」或「反對」事實，系統也必須透過檢索資料庫中的文章來提供證據句。
+</p>
+
 * TEAM_3517 
-* Private leaderboard：0.680223 / Rank 6
+* Private leaderboard：0.680223 / (Rank 6 / 301)
 * Environment: Colab Pro
     * GPU: NVIDIA A100-SXM4-40GB
  * [Download checkpoints](https://drive.google.com/file/d/12m8aVyHx8xZNr6A6dSZQXQDj_Q8-xVfW/view?usp=sharing)
@@ -45,10 +49,11 @@ pip install -r requirements.txt
 │   └── Evaluation.png
 └── ...
 ```
-### 執行流程(順序)
-1. combine.ipynb (合併第一＆第二批資料)
-2. TFIDF_doc5.ipynb & TFIDF_doc1.ipynb
-3. stage1&2.ipynb
-4. 5 個 stege3 .ipynb 檔
-5. Private.ipynb
-6. Ensemble.ipynb
+### 執行流程
+* combine.ipynb
+   * 合併第一＆第二批資料
+* TFIDF_doc5.ipynb & TFIDF_doc1.ipynb
+* stage1&2.ipynb
+* 5 個 stege3 .ipynb 檔
+* Private.ipynb
+* Ensemble.ipynb
